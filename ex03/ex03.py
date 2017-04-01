@@ -14,7 +14,7 @@ def main():
 
     while True:
         try:
-            input = raw_input("Okay do you really want to start this? q=quit, anything else starts the program")
+            input = raw_input("Okay do you really want to start this? q=quit, anything else starts the program: ")
         except:
             print "Bad input, closing"
             exit(0)

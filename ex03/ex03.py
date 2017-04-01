@@ -8,7 +8,7 @@
 def main():
     print
     print "------------------------------"
-    print u"Implement IBM Model 1"
+    print u"implement assignment from ex3"
     print "------------------------------"
     print
 

@@ -4,6 +4,8 @@
 # __author__ David Pinezich <s11729464>
 # __author__ Christian Schneider <s10606002>
 
+import re
+
 # main programm
 def main():
     print
@@ -24,6 +26,29 @@ def main():
             exit(0)
         else:
             break;
+
+
+    save_line = []
+    text_to_line = {}
+    with open("align/corpus.es-en", "r") as corpus:
+        for index, c in enumerate(corpus):
+            splitted_line = c.split("|||")
+
+            count_es = len(splitted_line[0].split())
+            count_en = len(splitted_line[1].split())
+
+            if (count_es < 3 and count_en < 3):
+                text_to_line[index] = str(splitted_line[0]) + "|||" + str(splitted_line[1])
+                save_line.append(index)
+    corpus.close()
+
+
+    with open("align/alignments.gdfa", "r") as alignment:
+        for index, a in enumerate(alignment):
+            if (index in save_line):
+                print str(index) + ": " + str(a) + text_to_line[index]
+
+    alignment.close()
 
 if __name__ == '__main__':
     main()

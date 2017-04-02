@@ -7,6 +7,9 @@
 
 # main programm
 def main():
+
+    import sys, getopt
+
     print
     print "------------------------------"
     print u"implement assignment from ex3"
@@ -27,12 +30,16 @@ def main():
             break;
 
     number_of_words = 2
+    file_uri_list = sys.argv;
+
+
+
 
     save_line = []
     text_to_line = {}
 
     # open the corpus and store all phrases with the length expected
-    with open("align/corpus.es-en", "r") as corpus:
+    with open(file_uri_list[1], "r") as corpus:
         for index, c in enumerate(corpus):
             splitted_line = c.split("|||")
 
@@ -47,7 +54,7 @@ def main():
     corpus.close()
     print u"corpus is ready"
 
-    with open("align/alignments.gdfa", "r") as alignment:
+    with open(file_uri_list[2], "r") as alignment:
         for index, a in enumerate(alignment):
             if (index in save_line):
                 text_to_line[index][0] = a.strip()

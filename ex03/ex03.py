@@ -8,6 +8,9 @@ import re
 
 # main programm
 def main():
+
+    import sys, getopt
+
     print
     print "------------------------------"
     print u"implement assignment from ex3"
@@ -27,10 +30,14 @@ def main():
         else:
             break;
 
+    file_uri_list = sys.argv;
+
+
+
 
     save_line = []
     text_to_line = {}
-    with open("align/corpus.es-en", "r") as corpus:
+    with open(file_uri_list[1], "r") as corpus:
         for index, c in enumerate(corpus):
             splitted_line = c.split("|||")
 
@@ -43,7 +50,7 @@ def main():
     corpus.close()
 
 
-    with open("align/alignments.gdfa", "r") as alignment:
+    with open(file_uri_list[2], "r") as alignment:
         for index, a in enumerate(alignment):
             if (index in save_line):
                 print str(index) + ": " + str(a) + text_to_line[index]

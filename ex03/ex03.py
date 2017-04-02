@@ -8,7 +8,7 @@
 # main programm
 def main():
 
-    import sys, getopt
+    import sys
 
     print
     print "------------------------------"
@@ -16,10 +16,13 @@ def main():
     print "------------------------------"
     print
 
-    '''
-        while True:
+    speed = False
+    number_of_words = 2
+    file_uri_list = sys.argv;
+
+    while True:
         try:
-            input = raw_input("Okay do you really want to start this? q=quit, anything else starts the program: ")
+            input = raw_input("Would you like to work with the quick version (only using the first few items from the lists)? s=short, q=quit: ")
         except:
             print "Bad input, closing"
             exit(0)
@@ -27,29 +30,10 @@ def main():
         if input == 'q':
             print u"Sad to see you going.... Bye!"
             exit(0)
+        elif input == 's':
+            s = True
         else:
             break;
-    '''
-
-    # asking about whether to run the quick version
-    s = False
-    try:
-        input = raw_input("Would you like to work with the quick version (only using the first few items from the lists)? s=short, extracts everything: ")
-    except:
-        print "Bad input, closing"
-        exit(0)
-    # quit
-    if input == 's':
-        s = True
-
-
-
-
-    number_of_words = 2
-    file_uri_list = sys.argv;
-
-
-
 
     save_line = []
     text_to_line = {}
@@ -58,39 +42,42 @@ def main():
         for index, c in enumerate(corpus):
             splitted_line = c.split("|||")
 
+            # check length without removing any char, even . is legit
             count_es = len(splitted_line[0].split())
             count_en = len(splitted_line[1].split())
 
-            if (count_es < 3 and count_en < 3):
-                # text_to_line[index] = str(splitted_line[0]) + "|||" + str(splitted_line[1])
+            if (count_es <= number_of_words and count_en <= number_of_words):
                 tokens_en = splitted_line[0].split()
                 tokens_es = splitted_line[1].split()
                 text_to_line[index] = [tokens_en, tokens_es]
                 save_line.append(index)
 
+            # speed version
             if (len(text_to_line) > 200 and s):
                 break
-
     corpus.close()
 
+    # create corpus entries
     corpus_entries_and_alignments = []
-
     with open(file_uri_list[2], "r") as alignment:
         for index, a in enumerate(alignment):
             if (index in save_line):
                 line = a[0:len(a) - 1]
                 splitted_line = line.split(" ")
                 alignments = []
-                for b in splitted_line:
-                    splitted_alignment = b.split("-")
+
+                for s_line in splitted_line:
+                    splitted_alignment = s_line.split("-")
                     alignments.append([splitted_alignment[0], splitted_alignment[1]])
+
                 corpus_entry_and_alignment = []
                 corpus_entry = text_to_line[index]
                 corpus_entry_and_alignment.append(corpus_entry)
                 corpus_entry_and_alignment.append(alignments)
                 corpus_entries_and_alignments.append(corpus_entry_and_alignment)
-                # print str(index) + ": " + str(alignments) + ": " + str(text_to_line[index])
-            if (len(corpus_entries_and_alignments) > 500 and s):
+
+            # speed version
+            if (len(corpus_entries_and_alignments) > 500 and speed):
                 break
     alignment.close()
 
@@ -107,12 +94,9 @@ def main():
     extracted_translations = []
     for ca in corpus_entries_and_alignments:
         previous_e_index = -1
-        next_e_index = -1
         current_alignments = ca[1];
         current_corpus_entry = ca[0];
         for a in current_alignments:
-            e_phrase = ""
-            f_phrase = ""
             next_e_index = int(a[0]);
 
             current_e_phrase_from_corpus = current_corpus_entry[0]
@@ -138,12 +122,10 @@ def main():
 
     # calculate and print probabilities
     for e in extracted_translations:
-        count_e_and_f = 0
-        count_f = 0
+        count_e_and_f, count_f = 0
         for cea in corpus_entries_and_alignments:
             ce = cea[0]
-            e_phrase_in_corpus = ""
-            f_phrase_in_corpus = ""
+            e_phrase_in_corpus, f_phrase_in_corpus = ""
             for cie in ce[0]:
                 e_phrase_in_corpus += cie + " "
             e_phrase_in_corpus = e_phrase_in_corpus[0:len(e_phrase_in_corpus) - 1]

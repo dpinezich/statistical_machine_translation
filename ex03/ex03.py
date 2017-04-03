@@ -34,7 +34,7 @@ def main():
 
     while True:
         try:
-            input = raw_input("Would you like to work with the quick version (only using the first few items from the lists)? s=short, q=quit: ")
+            input = raw_input("Would you like to work with the quick version (only using the first few items from the lists)? s=speed, q=quit: ")
         except:
             print "Bad input, closing"
             exit(0)

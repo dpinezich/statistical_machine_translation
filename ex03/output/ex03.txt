@@ -1,0 +1,501 @@
+/usr/bin/python /Users/christianschneider/PycharmProjects/statistical_machine_translation/ex03/ex03.py /Users/christianschneider/PycharmProjects/statistical_machine_translation/ex03/align_shortened/corpus_10k.es-en /Users/christianschneider/PycharmProjects/statistical_machine_translation/ex03/align_shortened/alignments_10k.gdfa
+
+------------------------------
+implement assignment from ex3
+------------------------------
+
+Would you like to work with the quick version (only using the first few items from the lists)? s=speed, q=quit: h
+Normal version selected: 
+
+Corpus is ready
+Alignment is ready
+Extraction is done
+Calculation is done
+*******************
+
+) ||| ) ||| 0
+* ||| * ||| 0
+. ||| . ||| 0
+1 ||| 1 ||| 0
+1. ||| 1. ||| 0
+1. resources ||| 1. recursos ||| 1.0
+10 ||| 10 ||| 0
+1000 ||| 1000 ||| 0
+1000 kva ||| 1000 kva ||| 1.0
+11 ||| 11 ||| 0
+110.9 ||| bienestar ||| 0.0
+12 ||| 12 ||| 0
+1200 ||| 1200 ||| 0
+1200 consultants ||| 1200 consultores ||| 1.0
+13 ||| 13 ||| 0
+14 ||| 14 ||| 0
+15 ||| 15 ||| 0
+16 ||| 16 ||| 0
+17 ||| 17 ||| 0
+18 ||| 18 ||| 0
+19 ||| 19 ||| 0
+2 ||| 2 ||| 0
+2.5 ||| suscripciones ||| 0.0
+20 ||| 20 ||| 0
+23 ||| 23 ||| 0
+24 ||| 24 ||| 0
+27 ||| 27 ||| 0
+3 ||| 3 ||| 0
+34 ||| 34 ||| 0
+36 ||| 42 ||| 0
+37 ||| 37 ||| 0
+4 ||| 4 ||| 0
+4300 ||| 4300 ||| 0
+4300 premises ||| 4300 locales ||| 1.0
+5 ||| 5 ||| 0
+500 ||| botswana ||| 0.0
+6 ||| 6 ||| 0
+6. ||| 6. ||| 0
+6. communications ||| 6. comunicaciones ||| 1.0
+6. spectra ||| 6. spectra ||| 1.0
+64 ||| 64 ||| 0
+69 ||| 69 ||| 0
+6th ||| sexta ||| 0
+6th meeting ||| sexta sesión ||| 1.0
+7 ||| 7 ||| 0
+7. ||| 7. ||| 0
+7. communications ||| 7. comunicaciones ||| 1.0
+70 ||| 70 ||| 0
+7th ||| séptima ||| 0
+7th meeting ||| séptima sesión ||| 1.0
+8 ||| 8 ||| 0
+8 ||| 6 ||| 0
+8. ||| equipo ||| 0
+8. miscellaneous ||| equipo diverso ||| 1.0
+8th ||| octava ||| 0
+8th meeting ||| octava sesión ||| 1.0
+9 ||| 9 ||| 0
+972.6 ||| raciones ||| 0.0
+: ||| : ||| 0
+a. ||| a. ||| 0
+a. attendance ||| a. asistencia ||| 1.0
+a. establishment ||| a. establecimiento ||| 1.0
+a. introduction ||| a. introducción ||| 1.0
+actual ||| reales ||| 0
+actual expenses ||| reales gastos ||| 0
+addendum ||| adición ||| 1.0
+additional ||| adicional ||| 0
+additional information ||| adicional información ||| 0
+administration ||| administración ||| 0
+administrative ||| administrativo ||| 0
+administrative assistant ||| administrativo ayudante ||| 0
+administrative support ||| administrativo apoyo ||| 0
+agenda ||| programa ||| 1.0
+ambassador ||| embajador ||| 1.0
+ambassador ambassador ||| embajador embajador ||| 1.0
+ambulance ||| ambulancia ||| 1.0
+amounts ||| sumas ||| 0
+amounts apportioned ||| sumas asignadas ||| 1.0
+amounts appropriated ||| sumas consignadas ||| 1.0
+annex ||| anexo ||| 1.0
+annex e ||| anexo e ||| 1.0
+annex i ||| anexo i ||| 1.0
+annex ii ||| anexo ii ||| 1.0
+annex iii ||| anexo iii ||| 1.0
+annex iv ||| anexo iv ||| 1.0
+annex ix ||| anexo ix ||| 1.0
+annex v ||| anexo v ||| 0.666666666667
+annex vi ||| anexo vi ||| 1.0
+annex vii ||| anexo vii ||| 1.0
+annex vii ||| anexo v ||| 0.333333333333
+annex viii ||| anexo viii ||| 1.0
+annex x ||| anexo x ||| 1.0
+annex xi ||| anexo xi ||| 1.0
+annex xii ||| anexo xii ||| 1.0
+annex xiii ||| anexo xiii ||| 1.0
+annex xv ||| anexo xv ||| 1.0
+annex xvi ||| anexo xvi ||| 1.0
+annexes ||| anexos ||| 1.0
+annexes * ||| anexos * ||| 1.0
+applicable ||| aplicable ||| 0
+applicable procedure ||| aplicable procedimiento ||| 0
+apportioned ||| asignadas ||| 0
+appropriated ||| consignadas ||| 0
+approved ||| presupuesto ||| 0
+approved ||| aprobado ||| 0
+approved ||| presupuesto aprobado ||| 0.0
+approved budget ||| presupuesto aprobado presupuesto ||| 0
+assistance ||| supernumerario ||| 0
+assistant ||| ayudante ||| 0
+attendance ||| asistencia ||| 0
+australia ||| australia ||| 1.0
+automatically ||| automáticamente ||| 0
+b. ||| b. ||| 0
+b. requirements ||| b. necesidades ||| 1.0
+b. statements ||| b. declaraciones ||| 1.0
+balance ||| saldo ||| 0
+balance due ||| saldo pendiente ||| 1.0
+bb ||| bb ||| 0
+bb . ||| bb . ||| 1.0
+botswana ||| botswana ||| 0.0
+botswana 500 ||| botswana botswana ||| 0
+budget ||| presupuesto ||| 0
+budget ||| estimaciones ||| 0
+budget ||| presupuestarias ||| 0
+budget ||| estimaciones presupuestarias ||| 0.0
+budget estimate ||| estimaciones presupuestarias estimaciones ||| 0
+c. ||| c. ||| 0
+c. requirements ||| c. necesidades ||| 1.0
+category ||| categoría ||| 1.0
+cc ||| cc ||| 0
+cc . ||| cc . ||| 1.0
+chief ||| subdirector ||| 0.0
+civilian ||| policía ||| 0
+civilian police ||| policía civil ||| 1.0
+civilian police ||| policía policía ||| 0
+civilian police police ||| policía policía local ||| 0
+co ||| co ||| 1.0
+comments ||| observaciones ||| 0
+comments ||| generales ||| 0
+committee ||| preparatorio ||| 0
+communications ||| comunicaciones ||| 1.0
+consultants ||| consultores ||| 1.0
+contents ||| sumario ||| 1.0
+contingents ||| militares ||| 0
+controlled ||| sustancias ||| 0
+controlled substances ||| sustancias controladas ||| 1.0
+corrigendum ||| corrección ||| 1.0
+cost ||| costo ||| 0
+counsellor ||| consejero ||| 0
+countries ||| desarrollados ||| 0
+cover ||| portada ||| 0.0
+cover page ||| portada portada ||| 0
+credentials ||| credenciales ||| 0
+curriculum ||| curriculum ||| 0
+curriculum vitae ||| curriculum vitae ||| 1.0
+d. ||| d. ||| 0
+d. administration ||| d. administración ||| 1.0
+d. credentials ||| d. credenciales ||| 1.0
+daily ||| tarifa ||| 0
+daily ||| diaria ||| 0
+daily ||| tarifa diaria ||| 0.0
+daily rate ||| tarifa diaria diaria ||| 0
+data ||| datos ||| 0
+debate ||| debate ||| 0
+debate ||| general ||| 0.0
+decisions ||| decisiones ||| 0
+definitions ||| definiciones ||| 1.0
+dehumidifiers ||| deshumificadores ||| 0
+dehumidifiers . ||| deshumificadores . ||| 1.0
+delete ||| suprímase ||| 0
+delete automatically ||| suprímase automáticamente ||| 1.0
+demands ||| exige ||| 0
+demands : ||| exige : ||| 1.0
+denmark ||| dinamarca ||| 1.0
+deputy ||| subdirector ||| 0.0
+deputy chief ||| subdirector subdirector ||| 0
+description ||| descripción ||| 1.0
+description cost ||| descripción costo ||| 1.0
+desktop ||| computadoras ||| 0.0
+developed ||| países ||| 0
+developed ||| desarrollados ||| 0
+developed ||| países desarrollados ||| 0.0
+developed countries ||| países desarrollados desarrollados ||| 0
+distr ||| distr ||| 0
+distr . ||| distr . ||| 1.0
+due ||| pendiente ||| 0
+e ||| e ||| 0
+education ||| superiores ||| 0
+english ||| página ||| 0.0
+english page ||| página página ||| 0
+english page page ||| página página 2 ||| 0
+essential ||| esenciales ||| 0
+essential uses ||| esenciales usos ||| 0
+establishment ||| establecimiento ||| 0
+estimate ||| estimación ||| 0
+estimate ||| de ||| 0
+estimate ||| estimación de ||| 1.0
+estimate ||| estimaciones ||| 0
+estimate ||| revisadas ||| 0
+estimated ||| valor ||| 0
+estimated ||| estimado ||| 0
+estimated ||| valor estimado ||| 0.0
+estimated value ||| valor estimado valor ||| 0
+estimates ||| revisados ||| 0
+exchange ||| telefónica ||| 0
+existing ||| puestos ||| 0
+existing ||| existentes ||| 0
+existing ||| puestos existentes ||| 0.0
+existing proposed ||| puestos existentes existentes ||| 0
+expenses ||| gastos ||| 0
+experience ||| experiencia ||| 0
+field ||| servicio ||| 0
+field service ||| servicio móvil ||| 1.0
+finance ||| finanzas ||| 1.0
+financial ||| mecanismo ||| 0
+financial mechanism ||| mecanismo financiero ||| 1.0
+finland ||| finlandia ||| 1.0
+forklift ||| elevadora ||| 0
+fourth ||| cuarta ||| 0
+fourth meeting ||| cuarta reuniَn ||| 1.0
+france ||| francia ||| 1.0
+freezers ||| congeladores ||| 1.0
+freezers . ||| congeladores . ||| 1.0
+furniture ||| muebles ||| 1.0
+g. ||| g. ||| 0
+g. communications ||| g. comunicaciones ||| 1.0
+general ||| debate ||| 0
+general ||| observaciones ||| 0
+general ||| general ||| 1.0
+general ||| servicios ||| 0
+general comments ||| observaciones observaciones ||| 0
+general comments comments ||| observaciones observaciones generales ||| 0
+general debate ||| debate debate ||| 0
+general debate debate ||| debate debate general ||| 0
+general services ||| servicios servicios ||| 0
+general services services ||| servicios servicios generales ||| 0
+grand ||| total ||| 0.0
+grand ||| general ||| 0.0
+grand ||| total general ||| 0.0
+grand total ||| total general total ||| 0
+group ||| grupo ||| 0
+group iii ||| grupo iii ||| 1.0
+hf ||| hf ||| 1.0
+higher ||| estudios ||| 0
+higher ||| superiores ||| 0
+higher ||| estudios superiores ||| 0.0
+higher education ||| estudios superiores superiores ||| 0
+i ||| i ||| 1.0
+i. ||| i. ||| 0
+i. introduction ||| i. introduccion ||| 1.0
+iceland ||| islandia ||| 1.0
+ii ||| ii ||| 1.0
+ii . ||| ii . ||| 1.0
+iii ||| iii ||| 0
+iii . ||| iii . ||| 1.0
+information ||| información ||| 0
+introduction ||| introduccion ||| 0
+introduction ||| introducción ||| 1.0
+italy ||| italia ||| 1.0
+iv ||| iv ||| 0
+iv . ||| iv . ||| 1.0
+ix ||| ix ||| 0
+jordan ||| jordania ||| 1.0
+kva ||| kva ||| 0
+languages ||| idiomas ||| 1.0
+laptop ||| computadoras ||| 0.0
+laptop desktop ||| computadoras computadoras ||| 0
+level ||| categoría ||| 0.0
+local ||| local ||| 1.0
+local level ||| local categoría ||| 0
+local staff ||| local personal ||| 0
+logistics ||| unidad ||| 0
+logistics ||| logística ||| 0
+logistics ||| unidad logística ||| 0.0
+logistics unit ||| unidad logística logística ||| 0
+map ||| mapa ||| 0
+map . ||| mapa . ||| 1.0
+mechanism ||| financiero ||| 0
+medical ||| médica ||| 0
+medical unit ||| médica unidad ||| 0
+meeting ||| preparatorias ||| 0
+meeting ||| sesión ||| 0
+meeting ||| reuniَn ||| 0
+meeting ) ||| preparatorias ) ||| 1.0
+meetings ||| reuniones ||| 0
+mexico ||| mexico ||| 1.0
+military ||| gentes ||| 0
+military contingents ||| gentes militares ||| 1.0
+minister ||| ministro ||| 0
+minister counsellor ||| ministro consejero ||| 1.0
+miscellaneous ||| diverso ||| 0
+mobile ||| taller ||| 0
+mobile ||| móvil ||| 0
+mobile ||| taller móvil ||| 0.0
+mobile workshop ||| taller móvil móvil ||| 0
+nations ||| naciones ||| 0.0
+netherlands ||| países ||| 0
+netherlands ||| bajos ||| 0
+netherlands ||| países bajos ||| 1.0
+norway ||| noruega ||| 1.0
+norway ||| - ||| 0
+norway ||| - noruega ||| 1.0
+notes ||| notas ||| 1.0
+notes : ||| notas : ||| 1.0
+observations ||| observaciones ||| 0
+observers ||| observadores ||| 1.0
+of ||| de ||| 0
+of venezuela ||| de venezuela ||| 1.0
+page ||| página ||| 1.0
+page ||| portada ||| 0.0
+page ||| 4 ||| 0
+page ||| página 4 ||| 1.0
+page ||| 3 ||| 0
+page ||| página 3 ||| 1.0
+page ||| 2 ||| 0
+page 36 ||| página 42 ||| 1.0
+page 5 ||| página 5 ||| 1.0
+paragraph ||| párrafo ||| 0
+paragraph 1 ||| párrafo 1 ||| 1.0
+paragraph 10 ||| párrafo 10 ||| 1.0
+paragraph 11 ||| párrafo 11 ||| 1.0
+paragraph 13 ||| párrafo 13 ||| 1.0
+paragraph 14 ||| párrafo 14 ||| 1.0
+paragraph 15 ||| párrafo 15 ||| 1.0
+paragraph 16 ||| párrafo 16 ||| 1.0
+paragraph 17 ||| párrafo 17 ||| 1.0
+paragraph 18 ||| párrafo 18 ||| 1.0
+paragraph 19 ||| párrafo 19 ||| 1.0
+paragraph 2 ||| párrafo 2 ||| 1.0
+paragraph 20 ||| párrafo 20 ||| 1.0
+paragraph 27 ||| párrafo 27 ||| 1.0
+paragraph 3 ||| párrafo 3 ||| 1.0
+paragraph 34 ||| párrafo 34 ||| 1.0
+paragraph 37 ||| párrafo 37 ||| 1.0
+paragraph 4 ||| párrafo 4 ||| 1.0
+paragraph 5 ||| párrafo 5 ||| 1.0
+paragraph 64 ||| párrafo 64 ||| 1.0
+paragraph 69 ||| párrafo 69 ||| 1.0
+paragraph 7 ||| párrafo 7 ||| 1.0
+paragraph 70 ||| párrafo 70 ||| 1.0
+paragraph 8 ||| párrafo 6 ||| 1.0
+paragraph 8 ||| párrafo 8 ||| 1.0
+paragraph 9 ||| párrafo 9 ||| 1.0
+period ||| período ||| 1.0
+permanent ||| representante ||| 0
+permanent representative ||| representante permanente ||| 1.0
+personal ||| personales ||| 0
+personal data ||| personales datos ||| 0
+philippines ||| filipinas ||| 1.0
+photocopiers ||| fotocopiadoras ||| 1.0
+poland ||| polonia ||| 1.0
+police ||| civil ||| 0
+police ||| policía ||| 0
+police ||| local ||| 0.0
+premises ||| locales ||| 0
+preparatory ||| comité ||| 0
+preparatory ||| preparatorio ||| 0
+preparatory ||| comité preparatorio ||| 0.0
+preparatory committee ||| comité preparatorio preparatorio ||| 0
+procedure ||| procedimiento ||| 0
+procurement ||| adquisiciones ||| 1.0
+professional ||| profesional ||| 0
+professional experience ||| profesional experiencia ||| 0
+proposed ||| existentes ||| 0
+qasr ||| qasr ||| 0
+rate ||| diaria ||| 0
+rations ||| raciones ||| 0.0
+rations 972.6 ||| raciones raciones ||| 0
+refrigerators ||| refrigeradores ||| 1.0
+regional ||| regionales ||| 0
+regional meetings ||| regionales reuniones ||| 0
+repatriation ||| repatriación ||| 1.0
+representative ||| permanente ||| 0
+requirements ||| necesidades ||| 0
+resolutions ||| resoluciones ||| 0
+resources ||| recursos ||| 0
+revised ||| estimados ||| 0
+revised ||| revisados ||| 0
+revised ||| estimados revisados ||| 0.0
+revised ||| estimaciones ||| 0
+revised ||| revisadas ||| 0
+revised ||| estimaciones revisadas ||| 0.0
+revised estimate ||| estimaciones revisadas revisadas ||| 0
+revised estimates ||| estimados revisados revisados ||| 0
+rotation ||| rotación ||| 1.0
+rule ||| artículo ||| 0
+rule 1 ||| artículo 1 ||| 1.0
+rule 10 ||| artículo 10 ||| 1.0
+rule 11 ||| artículo 11 ||| 1.0
+rule 12 ||| artículo 12 ||| 1.0
+rule 13 ||| artículo 13 ||| 1.0
+rule 14 ||| artículo 14 ||| 1.0
+rule 15 ||| artículo 15 ||| 1.0
+rule 16 ||| artículo 16 ||| 1.0
+rule 17 ||| artículo 17 ||| 1.0
+rule 18 ||| artículo 18 ||| 1.0
+rule 19 ||| artículo 19 ||| 1.0
+rule 2 ||| artículo 2 ||| 1.0
+rule 20 ||| artículo 20 ||| 1.0
+rule 23 ||| artículo 23 ||| 1.0
+rule 24 ||| artículo 24 ||| 1.0
+rule 3 ||| artículo 3 ||| 1.0
+rule 4 ||| artículo 4 ||| 1.0
+rule 5 ||| artículo 5 ||| 1.0
+rule 6 ||| artículo 6 ||| 1.0
+rule 7 ||| artículo 7 ||| 1.0
+rule 8 ||| artículo 8 ||| 1.0
+rule 9 ||| artículo 9 ||| 1.0
+salary ||| sueldo ||| 1.0
+savings ||| economías ||| 1.0
+scraper ||| horquilla ||| 0
+scraper forklift ||| horquilla elevadora ||| 1.0
+sector ||| sector ||| 0
+sector 2 ||| sector 2 ||| 1.0
+sector 3 ||| sector 3 ||| 1.0
+sector 4 ||| sector 4 ||| 1.0
+service ||| móvil ||| 0
+services ||| servicios ||| 0
+services ||| generales ||| 0
+spectra ||| spectra ||| 0
+staff ||| personal ||| 0
+statements ||| declaraciones ||| 0
+subscriptions ||| suscripciones ||| 0.0
+subscriptions 2.5 ||| suscripciones suscripciones ||| 0
+substances ||| controladas ||| 0
+support ||| apoyo ||| 0
+sweden ||| suecia ||| 1.0
+table ||| cuadro ||| 0
+table 1 ||| cuadro 1 ||| 1.0
+telephone ||| centralita ||| 0
+telephone ||| telefónica ||| 0
+telephone ||| centralita telefónica ||| 0.0
+telephone exchange ||| centralita telefónica telefónica ||| 0
+temporary ||| personal ||| 0
+temporary ||| supernumerario ||| 0
+temporary ||| personal supernumerario ||| 0.0
+temporary assistance ||| personal supernumerario supernumerario ||| 0
+total ||| unitario ||| 0
+total ||| total ||| 1.0
+totals ||| remolque ||| 0.0
+trailer ||| remolque ||| 0.0
+trailer totals ||| remolque remolque ||| 0
+transport ||| transporte ||| 1.0
+umm ||| umm ||| 0
+umm qasr ||| umm qasr ||| 1.0
+unamic ||| unamic ||| 1.0
+unit ||| precio ||| 0
+unit ||| unitario ||| 0
+unit ||| precio unitario ||| 0.0
+unit ||| logística ||| 0
+unit ||| unidad ||| 0
+unit total ||| precio unitario unitario ||| 0
+united ||| naciones ||| 0.0
+united nations ||| naciones naciones ||| 0
+untac ||| apronuc ||| 1.0
+uses ||| usos ||| 0
+v ||| v ||| 0
+v. ||| v. ||| 0
+v. decisions ||| v. decisiones ||| 1.0
+v. resolutions ||| v. resoluciones ||| 1.0
+value ||| valor ||| 0
+venezuela ||| venezuela ||| 0
+vi ||| vi ||| 0
+vii ||| vii ||| 0
+vii ||| v ||| 0
+viii ||| viii ||| 0
+vitae ||| vitae ||| 0
+welfare ||| bienestar ||| 0.0
+welfare 110.9 ||| bienestar bienestar ||| 0
+workshop ||| móvil ||| 0
+x ||| x ||| 0
+x. ||| x. ||| 0
+x. observations ||| x. observaciones ||| 1.0
+xi ||| xi ||| 0
+xii ||| xii ||| 0
+xiii ||| xiii ||| 0
+xl ||| xl ||| 0
+xl . ||| xl . ||| 1.0
+xli ||| xli ||| 0
+xli . ||| xli . ||| 1.0
+xv ||| xv ||| 0
+xvi ||| xvi ||| 0
+
+*******************
+
+Process finished with exit code 0

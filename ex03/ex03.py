@@ -43,7 +43,7 @@ def main():
         elif input == 's':
             print u"Quick version selected: "
             print ""
-            s = True
+            speed = True
             break;
         else:
             print u"Normal version selected: "
@@ -68,7 +68,7 @@ def main():
                 save_line.append(index)
 
             # speed version
-            if (len(text_to_line) > 200 and s):
+            if (len(text_to_line) > 200 and speed):
                 break
     corpus.close()
 

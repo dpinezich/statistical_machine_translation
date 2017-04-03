@@ -125,7 +125,7 @@ def main():
                 previous_extracted_translation = extracted_translations[len(extracted_translations[0]) - 1]
                 e_phrase = previous_extracted_translation[0]
                 f_phrase = previous_extracted_translation[1]
-                f_phrase += current_f_phrase_from_corpus[int(a[1])]
+                f_phrase += " " + current_f_phrase_from_corpus[int(a[1])]
             else:
                 e_phrase = current_e_phrase_from_corpus[int(a[0])]
                 f_phrase = current_f_phrase_from_corpus[int(a[1])]

@@ -4,6 +4,16 @@
 # __author__ David Pinezich <s11729464>
 # __author__ Christian Schneider <s10606002>
 
+# Class struct for all the joys of sorting and stuff
+class Calculated:
+    def __init__(self, word, foreign, ratio):
+        self.word = word
+        self.foreign = foreign
+        self.ratio = ratio
+
+    def __repr__(self):
+        return repr((self.word, self.foreign, self.ratio))
+
 
 # main programm
 def main():
@@ -127,6 +137,7 @@ def main():
 
 
     # calculate and print probabilities
+    calculated_triples = []
     for e in extracted_translations:
         count_e_and_f = 0
         count_f = 0
@@ -149,7 +160,17 @@ def main():
         ratio = 0
         if count_f > 0:
             ratio = float(count_e_and_f) / float(count_f)
-        print e[0] + " ||| " + e[1] + " ||| " + str(ratio)
+        calculated_triples.append(Calculated(e[0], e[1], str(ratio)))
+
+        #print e[0] + " ||| " + e[1] + " ||| " + str(ratio)
+
+    sorted_calculated_triples = sorted(calculated_triples, key=lambda calculated: calculated.word)
+
+    out_list = []
+    for out in sorted_calculated_triples:
+        if(out.word not in out_list):
+            out_list.append(out.word)
+            print out.word + " ||| " + out.foreign + " ||| " + out.ratio
 
 
 if __name__ == '__main__':

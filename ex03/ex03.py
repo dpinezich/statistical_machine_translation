@@ -70,7 +70,7 @@ def main():
                 save_line.append(index)
 
             # speed version
-            if (len(text_to_line) > 10000 and speed):
+            if (len(text_to_line) > 1000 and speed):
                 break
     print u"Corpus is ready"
     corpus.close()
@@ -95,7 +95,7 @@ def main():
                 corpus_entries_and_alignments.append(corpus_entry_and_alignment)
 
             # speed version
-            if (len(corpus_entries_and_alignments) > 10000 and speed):
+            if (len(corpus_entries_and_alignments) > 1000 and speed):
                 break
     print u"Alignment is ready"
     alignment.close()
@@ -168,8 +168,9 @@ def main():
 
     out_list = []
     for out in sorted_calculated_triples:
-        if(out.word not in out_list):
-            out_list.append(out.word)
+        concated_string = out.word+out.foreign
+        if(concated_string not in out_list):
+            out_list.append(concated_string)
             print out.word + " ||| " + out.foreign + " ||| " + out.ratio
     print
     print u"*******************"

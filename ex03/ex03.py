@@ -31,8 +31,13 @@ def main():
             print u"Sad to see you going.... Bye!"
             exit(0)
         elif input == 's':
+            print u"Quick version selected: "
+            print ""
             s = True
+            break;
         else:
+            print u"Normal version selected: "
+            print ""
             break;
 
     save_line = []
@@ -120,12 +125,15 @@ def main():
 
     '''
 
+
     # calculate and print probabilities
     for e in extracted_translations:
-        count_e_and_f, count_f = 0
+        count_e_and_f = 0
+        count_f = 0
         for cea in corpus_entries_and_alignments:
             ce = cea[0]
-            e_phrase_in_corpus, f_phrase_in_corpus = ""
+            e_phrase_in_corpus = ""
+            f_phrase_in_corpus = ""
             for cie in ce[0]:
                 e_phrase_in_corpus += cie + " "
             e_phrase_in_corpus = e_phrase_in_corpus[0:len(e_phrase_in_corpus) - 1]

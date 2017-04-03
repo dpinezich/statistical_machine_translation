@@ -59,9 +59,12 @@ def main():
         for index, c in enumerate(corpus):
             splitted_line = c.split("|||")
 
-            # check length without removing any char, even . is legit
-            count_es = len(splitted_line[0].split())
-            count_en = len(splitted_line[1].split())
+            try:
+                # check length without removing any char, even . is legit
+                count_es = len(splitted_line[0].split())
+                count_en = len(splitted_line[1].split())
+            except:
+                break
 
             if (count_es <= number_of_words and count_en <= number_of_words):
                 tokens_en = splitted_line[0].split()
@@ -100,15 +103,6 @@ def main():
     print u"Alignment is ready"
     alignment.close()
 
-    '''
-        # just for testing
-        for i in corpus_entries_and_alignments:
-            corpus_item = i[0]
-            es_iten = corpus_item[1]
-            first_es_token = es_iten[0]
-            print first_es_token
-    '''
-
     # extract translations
     extracted_translations = []
     for ca in corpus_entries_and_alignments:
@@ -121,24 +115,34 @@ def main():
             current_e_phrase_from_corpus = current_corpus_entry[0]
             current_f_phrase_from_corpus = current_corpus_entry[1]
 
+            e_phrase_1 = ""
+            f_phrase_1 = ""
+            e_phrase_2 = ""
+            f_phrase_2 = ""
+
             if (next_e_index == previous_e_index and previous_e_index != -1):
                 previous_extracted_translation = extracted_translations[len(extracted_translations) - 1]
-                e_phrase = previous_extracted_translation[0]
-                f_phrase = previous_extracted_translation[1]
-                f_phrase += " " + current_f_phrase_from_corpus[int(a[1])]
+                e_phrase_2 = previous_extracted_translation[0]
+                f_phrase_2 = previous_extracted_translation[1]
+                f_phrase_2 += " " + current_f_phrase_from_corpus[int(a[1])]
             if (next_e_index == previous_e_index + 1 and previous_e_index != -1):
                 previous_extracted_translation = extracted_translations[len(extracted_translations) - 1]
-                e_phrase = previous_extracted_translation[0]
-                e_phrase += " " + current_e_phrase_from_corpus[int(a[0])]
-                f_phrase = previous_extracted_translation[1]
-                f_phrase += " " + current_f_phrase_from_corpus[int(a[1])]
+                e_phrase_2 = previous_extracted_translation[0]
+                e_phrase_2 += " " + current_e_phrase_from_corpus[int(a[0])]
+                f_phrase_2 = previous_extracted_translation[1]
+                f_phrase_2 += " " + current_f_phrase_from_corpus[int(a[1])]
             else:
-                e_phrase = current_e_phrase_from_corpus[int(a[0])]
-                f_phrase = current_f_phrase_from_corpus[int(a[1])]
                 previous_e_index = next_e_index
-            extracted_translations.append([e_phrase, f_phrase])
-    print u"Extraction is done"
 
+            e_phrase_1 = current_e_phrase_from_corpus[int(a[0])]
+            f_phrase_1 = current_f_phrase_from_corpus[int(a[1])]
+
+            if e_phrase_1 != "":
+                extracted_translations.append([e_phrase_1, f_phrase_1])
+            if e_phrase_2 != "":
+                extracted_translations.append([e_phrase_2, f_phrase_2])
+
+    print u"Extraction is done"
 
     # calculate and print probabilities
     calculated_triples = []

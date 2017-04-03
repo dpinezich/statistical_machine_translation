@@ -122,8 +122,14 @@ def main():
             current_f_phrase_from_corpus = current_corpus_entry[1]
 
             if (next_e_index == previous_e_index and previous_e_index != -1):
-                previous_extracted_translation = extracted_translations[len(extracted_translations[0]) - 1]
+                previous_extracted_translation = extracted_translations[len(extracted_translations) - 1]
                 e_phrase = previous_extracted_translation[0]
+                f_phrase = previous_extracted_translation[1]
+                f_phrase += " " + current_f_phrase_from_corpus[int(a[1])]
+            if (next_e_index == previous_e_index + 1 and previous_e_index != -1):
+                previous_extracted_translation = extracted_translations[len(extracted_translations) - 1]
+                e_phrase = previous_extracted_translation[0]
+                e_phrase += " " + current_e_phrase_from_corpus[int(a[0])]
                 f_phrase = previous_extracted_translation[1]
                 f_phrase += " " + current_f_phrase_from_corpus[int(a[1])]
             else:

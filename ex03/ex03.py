@@ -4,6 +4,8 @@
 # __author__ David Pinezich <s11729464>
 # __author__ Christian Schneider <s10606002>
 
+# Hello intruder, we heard you like github: https://github.com/dpinezich/statistical_machine_translation :)
+
 # Class struct for all the joys of sorting and stuff
 class Calculated:
     def __init__(self, word, foreign, ratio):

@@ -70,8 +70,9 @@ def main():
                 save_line.append(index)
 
             # speed version
-            if (len(text_to_line) > 200 and speed):
+            if (len(text_to_line) > 10000 and speed):
                 break
+    print u"Corpus is ready"
     corpus.close()
 
     # create corpus entries
@@ -94,8 +95,9 @@ def main():
                 corpus_entries_and_alignments.append(corpus_entry_and_alignment)
 
             # speed version
-            if (len(corpus_entries_and_alignments) > 500 and speed):
+            if (len(corpus_entries_and_alignments) > 10000 and speed):
                 break
+    print u"Alignment is ready"
     alignment.close()
 
     '''
@@ -129,13 +131,7 @@ def main():
                 f_phrase = current_f_phrase_from_corpus[int(a[1])]
                 previous_e_index = next_e_index
             extracted_translations.append([e_phrase, f_phrase])
-
-    # testing
-    '''
-    for e in extracted_translations:
-    print str(e)
-
-    '''
+    print u"Extraction is done"
 
 
     # calculate and print probabilities
@@ -164,7 +160,9 @@ def main():
             ratio = float(count_e_and_f) / float(count_f)
         calculated_triples.append(Calculated(e[0], e[1], str(ratio)))
 
-        #print e[0] + " ||| " + e[1] + " ||| " + str(ratio)
+    print u"Calculation is done"
+    print u"*******************"
+    print
 
     sorted_calculated_triples = sorted(calculated_triples, key=lambda calculated: calculated.word)
 
@@ -173,7 +171,8 @@ def main():
         if(out.word not in out_list):
             out_list.append(out.word)
             print out.word + " ||| " + out.foreign + " ||| " + out.ratio
-
+    print
+    print u"*******************"
 
 if __name__ == '__main__':
     main()
